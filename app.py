@@ -9,7 +9,7 @@ model = tf.keras.models.load_model('Brain_Tumor_Model.h5')
 
 st.title("Brain Tumor Detection")
 
-uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "png", "jpeg"])
+uploaded_image = st.file_uploader("Upload an MRI Scan...", type=["jpg", "png", "jpeg"])
 
 if uploaded_image is not None:
     st.image(uploaded_image, caption="Uploaded Image", use_column_width=True)
